@@ -2,7 +2,7 @@ import random
 from turtle import Turtle, Screen
 
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
-directions = [0,90,180,270]
+directions = [0,90,180,270,360]
 
 
 turtle = Turtle()
@@ -23,7 +23,6 @@ turtle.speed(0)
 
 turtle.speed("fastest")
 turtle.penup()
-turtle.hideturtle()
 turtle.setheading(225)
 turtle.forward(300)
 turtle.setheading(0)
@@ -39,7 +38,6 @@ for dot_count in range(1, number_of_dots + 1):
         turtle.setheading(180)
         turtle.forward(500)
         turtle.setheading(0)
-
 
 screen = Screen()
 screen.exitonclick()
